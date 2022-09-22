@@ -8,7 +8,7 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-line-height: 150px;
+line-height: 100px;
 background-color: lightblue;
 }
 
@@ -21,16 +21,23 @@ h2 {
 font-size: 55px;
 }
 
+.about-me-text {
+display: inline-block;
+padding: 20px;
+width: 60%;
+}
+
 .nav-links {
 display: inline;
 padding: 20px;
+font-size: 24px;
 }
 
 .subtitle {
 display: flex;
 justify-content: flex-end;
 align-items: flex-end;
-height: 100px;
+height: 120px;
 background-color: brown;
 }
 
@@ -47,20 +54,31 @@ background-color: bisque;
 #about-me {
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 }
 
 #work {
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 }
 
 #resume {
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 }
 
 footer {
 display: flex;
 justify-content: space-evenly;
+align-items: center;
 background-color: crimson;
+margin: 0;
+}
+
+.contact-links {
+display: inline;
+padding: 20px;
+font-size: 20px;
 }

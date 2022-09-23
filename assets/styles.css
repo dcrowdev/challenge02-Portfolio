@@ -4,6 +4,11 @@ color: rgb(0, 217, 255);
 font-weight: lighter;
 }
 
+body {
+padding: 0;
+margin: 0;
+}
+
 header {
 display: flex;
 justify-content: space-between;
@@ -19,6 +24,10 @@ font-size: 88px;
 
 h2 {
 font-size: 55px;
+}
+
+.work-header {
+margin-right: 100px;
 }
 
 .about-me-text {
@@ -51,6 +60,39 @@ main {
 background-color: bisque;
 }
 
+.projects {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+/* justify-content: space-evenly; */
+/* align-items: center; */
+}
+
+.images {
+height: 200px;
+width: 400px;
+padding: 5px;
+/*border: 2px solid cyan;*/
+}
+
+.img-one {
+width: 1000px;
+object-fit: cover;
+}
+
+.img-two {
+width: 600px;
+}
+
+#image-container {
+display: flex;
+flex-direction: column;
+}
+
+.project-container {
+width: 400px;
+}
+
 #about-me {
 display: flex;
 justify-content: space-evenly;
@@ -59,7 +101,9 @@ align-items: center;
 
 #work {
 display: flex;
-justify-content: space-evenly;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
 align-items: center;
 }
 

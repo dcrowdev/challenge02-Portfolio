@@ -47,14 +47,12 @@ h2 {
 }
 
 .about-me-header {
-    margin-left: 15%;
-    padding-right: 30px;
+    padding-right: 13px;
     border-right: 2px solid black;
 }
 
 .about-me-text {
-    margin-right: 16%;
-    width: 50%;
+    width: 1020px;
     padding: 50px;
     line-height: 30px;
 }
@@ -63,6 +61,8 @@ h2 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 main { 
@@ -107,7 +107,7 @@ background-color: #f0b76d;
 
 #about-me {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -115,7 +115,7 @@ background-color: #f0b76d;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -123,6 +123,7 @@ background-color: #f0b76d;
     margin-right: 50px;
     padding-right: 100px;
     border-right: 2px solid black;
+    height: 700px;
 }
 
 
@@ -134,9 +135,9 @@ background-color: #f0b76d;
 }
 
 .resume-header {
-    margin-left: 15%;
-    padding-right: 70px;
+    padding-right: 52px;
     border-right: 2px solid black;
+    height: 150px;
 }
 
 .resume-text {
@@ -148,7 +149,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     line-height: 100px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     background-color: #a16515
 }
 
@@ -179,6 +180,14 @@ footer {
     height: 300px;
 }
 
+/* .images::before {
+width: 20px;
+height: 20px;
+color: rgb(12, 14, 51);
+content: ('lorem');
+z-index: 1;
+} */
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -190,3 +199,18 @@ footer {
 		background-position: 0% 50%;
 	}
 }
+
+/* @media screen and (max-width: 1020px) {
+    #work {
+    flex-direction: column;
+    align-items: flex-start;
+ }
+     .images { 
+    width: 50%;
+    flex-direction: row;
+}
+    .projects {
+    flex-direction: row;
+    width: 300px;
+ }
+}*/

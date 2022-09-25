@@ -71,11 +71,6 @@ p {
     margin-left: 15%;
 }
 
-#container {
-    display: flex;
-    flex-direction: column;
-}
-
 #about-me {
     display: flex;
     padding: 20px;
@@ -151,8 +146,6 @@ p {
 
 .footer {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     padding: 20px;
 }
 
@@ -164,22 +157,26 @@ p {
 .contact-links {
     display: inline;
     font-size: 20px;
-    padding-left: 100px;
-    padding-right: 20px;
+    padding-left: 8%;
+
 }
 
 .footer-links:link {
-text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     border-left: 3px solid rgb(12, 14, 51);
     height: 100px;
+    width: 50%;
+    padding-left: 5%;
 }
+
+/* KEYFRAMES */
 
 @keyframes gradient {
     0% {
@@ -195,30 +192,94 @@ text-decoration: none;
     }
 }
 
-@media screen and (max-width: 670px) {
-    body {
-        display: inline-block;
-    }
-}
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1228px) {
     .project-container {
         flex-wrap: wrap;
     }
 
-    .main-headers {
-        width: 20%;
-    }
-
-    p {
-        margin-left: 10%;
-    }
-
-    .project-images {
+    .about-me-text {
         margin-left: 10%;
     }
 
     .footer-ul {
         margin-left: 3%;
+    }
+
+    #work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-images {
+        border-top: 3px solid rgb(12, 14, 51);
+        border-left: none;
+        width: 70%;
+        padding: 0;
+    }
+
+    .work-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #about-me {
+        flex-direction: column;
+    }
+
+    .about-me-text {
+        border-top: 3px solid rgb(12, 14, 51);
+        border-left: none;
+        width: 80%;
+    }
+
+    .about-me-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main-headers {
+        width: 50%;
+    }
+
+    #resume {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-text {
+        border-top: 3px solid rgb(12, 14, 51);
+        border-left: none;
+        width: 50%;
+        padding: 5%;
+        margin: 0;
+    }
+
+    .resume-header {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-ul {
+        border-top: 3px solid rgb(12, 14, 51);
+        border-left: none;
+        margin: 3%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    body {
+        display: inline-block;
     }
 }

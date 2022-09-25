@@ -1,6 +1,6 @@
 # Portfolio
 
-![portfolio-screenshot](./assets/images/portfolio.PNG)
+![portfolio-screenshot](./assets/images/about-me-screenshot.png)
 
 This is my personal Portfolio for anyone interested in hiring a Software Developer!
 

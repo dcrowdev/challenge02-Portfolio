@@ -195,16 +195,11 @@ p {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1228px) {
+    header {
+        line-height: 1;}
+
     .project-container {
         flex-wrap: wrap;
-    }
-
-    .about-me-text {
-        margin-left: 10%;
-    }
-
-    .footer-ul {
-        margin-left: 3%;
     }
 
     #work {
@@ -212,10 +207,14 @@ p {
         align-items: center;
     }
 
+    .footer-ul {
+    padding-left: 8%;
+    }
+
     .project-images {
         border-top: 3px solid rgb(12, 14, 51);
         border-left: none;
-        width: 70%;
+        width: 60%;
         padding: 0;
     }
 
@@ -230,12 +229,15 @@ p {
 
     #about-me {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-me-text {
         border-top: 3px solid rgb(12, 14, 51);
         border-left: none;
-        width: 80%;
+        width: 70%;
+        padding: 1%;
+        line-height: 1.8;
     }
 
     .about-me-header {

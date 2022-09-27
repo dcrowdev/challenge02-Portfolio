@@ -196,7 +196,8 @@ p {
 
 @media screen and (max-width: 1228px) {
     header {
-        line-height: 1;}
+        line-height: 1;
+    }
 
     .project-container {
         flex-wrap: wrap;
@@ -208,7 +209,7 @@ p {
     }
 
     .footer-ul {
-    padding-left: 8%;
+        padding-left: 8%;
     }
 
     .project-images {
@@ -222,6 +223,13 @@ p {
         margin: 0 auto;
         text-align: center;
     }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 
